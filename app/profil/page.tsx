@@ -51,33 +51,50 @@ Salah satu tokoh besar yang menjadi cikal bakal terbentuknya Desa Ngringo ini be
     <section id="demografi" className="demography"><div className="demographyInner"><header className="profileSectionHeading"><h2>Wilayah & Demografi Kependudukan</h2><p>Ringkasan wilayah administratif dan gambaran penduduk Desa Ngringo.</p></header><h3>Distribusi Berdasarkan Jenis Kelamin</h3><div className="genderCards"><article><p>Penduduk Laki-Laki</p><strong>12.026 <small>Jiwa</small></strong><div><span>Persentase Penduduk</span><b>49,27%</b></div><i><em /></i></article><article><p>Penduduk Perempuan</p><strong>12.381 <small>Jiwa</small></strong><div><span>Persentase Penduduk</span><b>50,73%</b></div><i><em /></i></article></div><h3 className="matrixTitle">Matriks Indikator Kependudukan</h3><div className="tableWrap" role="region" aria-label="Matriks indikator kependudukan, geser ke samping untuk melihat semua kolom" tabIndex={0}><table><thead><tr><th>No</th><th>Indikator Administratif / Demografi</th><th>Nilai Parameter</th><th>Satuan</th><th>Keterangan</th></tr></thead><tbody>{demographics.map((row) => <tr className={row[0] === "04" ? "populationTotal" : undefined} key={row[0]}>{row.map((cell) => <td key={cell}>{cell}</td>)}</tr>)}</tbody></table></div></div></section>
 
     <section id="layanan" className="healthSection">
-      <div className="healthSectionHeading"><h2>LAYANAN PUBLIK &amp; KESEHATAN</h2><p>Informasi fasilitas dan program kesehatan bagi warga Desa Ngringo.</p></div><div className="healthHeading"><h2>Kesehatan dan Kesejahteraan Masyarakat</h2></div>
+      <div className="healthSectionHeading"><h2>LAYANAN PUBLIK &amp; KESEHATAN</h2><p>Ringkasan fasilitas dan program kesehatan serta data sosial Desa Ngringo tahun 2024.</p></div><div className="healthHeading"><h2>Kesehatan dan Kesejahteraan Masyarakat</h2></div>
       <div className="healthInner">
         <div className="healthKpis">
-          <article><div className="healthKpiLabel"><span>FASILITAS PKD</span></div><div className="healthKpiValue"><b>1</b><small>Unit</small></div><p>Poliklinik Kesehatan Desa Ngringo aktif beroperasi</p></article>
-          <article><div className="healthKpiLabel"><span>APOTEK DESA</span></div><div className="healthKpiValue"><b>2</b><small>Unit</small></div><p>Distribusi farmasi & obat-obatan berizin</p></article>
-          <article><div className="healthKpiLabel"><span>POSYANDU AKTIF</span></div><div className="healthKpiValue"><b>22</b><small>Pos</small></div><p>Tersebar di seluruh kebayanan dan RW</p></article>
-          <article><div className="healthKpiLabel"><span>KADER KESEHATAN</span></div><div className="healthKpiValue"><b>79</b><small>Orang</small></div><p>61 Posyandu + 18 Posbindu PTM</p></article>
-          <article><div className="healthKpiLabel"><span>CAKUPAN KB AKTIF</span></div><div className="healthKpiValue gold"><b>66,13%</b></div><p>1.113 dari 1.683 Pasangan Usia Subur</p></article>
+          <article><div className="healthKpiLabel"><span>FASILITAS KESEHATAN</span></div><div className="healthKpiValue"><b>12</b><small>Unit</small></div><p>Rumah sakit, klinik, puskesmas, pustu, PKD, dan apotek</p></article>
+          <article><div className="healthKpiLabel"><span>POSYANDU &amp; POSBINDU</span></div><div className="healthKpiValue"><b>52</b><small>Pos</small></div><p>28 balita, 18 lansia, 3 remaja, dan 3 Posbindu PTM</p></article>
+          <article><div className="healthKpiLabel"><span>KADER KESEHATAN</span></div><div className="healthKpiValue"><b>287</b><small>Orang</small></div><p>272 kader Posyandu dan 15 kader Posbindu PTM</p></article>
+          <article><div className="healthKpiLabel"><span>PASANGAN USIA SUBUR</span></div><div className="healthKpiValue"><b>3.669</b><small>PUS</small></div><p>Data program keluarga berencana tahun 2024</p></article>
+          <article><div className="healthKpiLabel"><span>AKSEPTOR KB</span></div><div className="healthKpiValue"><b>1.947</b><small>Orang</small></div><p>Akseptor KB tercatat pada data tahun 2024</p></article>
         </div>
         <div className="healthCards">
           <article className="posyanduCard">
-            <header><div><h3>Layanan Posyandu & Skrining Komunitas</h3><p>22 Pos Terpadu & 79 Kader Terlatih</p></div><span className="healthTag">Total 22 Pos</span></header>
+            <header><div><h3>Fasilitas Kesehatan</h3><p>Jenis sarana pelayanan kesehatan yang tercatat di wilayah Ngringo.</p></div><span className="healthTag">Total 12 Unit</span></header>
             <div className="posyanduGrid">
-              <div><small>POSYANDU BALITA</small><strong>7 Pos</strong><p>Pemantauan gizi & imunisasi</p></div>
-              <div><small>POSYANDU LANSIA</small><strong>7 Pos</strong><p>Cek tensi, gula & senam lansia</p></div>
-              <div><small>POSYANDU REMAJA</small><strong>4 Pos</strong><p>Konseling gizi & reproduksi</p></div>
-              <div><small>POSBINDU PTM</small><strong>4 Pos</strong><p>Skrining penyakit tidak menular</p></div>
+              <div><small>RUMAH SAKIT</small><strong>1 Unit</strong></div>
+              <div><small>KLINIK PRATAMA</small><strong>1 Unit</strong></div>
+              <div><small>PUSKESMAS NONRAWAT INAP</small><strong>1 Unit</strong></div>
+              <div><small>PUSKESMAS PEMBANTU</small><strong>2 Unit</strong></div>
+              <div><small>POLIKLINIK KESEHATAN DESA</small><strong>1 PKD</strong></div>
+              <div><small>APOTEK</small><strong>6 Unit</strong></div>
             </div>
-            <div className="staffSummary"><strong>Distribusi Tenaga Kader Desa Ngringo:</strong><span>61 Kader Posyandu</span><span>18 Kader Posbindu PTM</span></div>
+            <div className="staffSummary"><strong>Jumlah fasilitas dijumlahkan dari sarana yang tercatat pada data 2024.</strong></div>
           </article>
           <article className="kbCard">
-            <header><div><h3>Program Keluarga Berencana</h3><p>Keluarga Berkualitas & Sejahtera</p></div><span className="healthTag goldTag">66,13% Capaian</span></header>
-            <div className="kbOverview"><div><small>PASANGAN USIA SUBUR (PUS)</small><strong>1.683</strong></div><div><small>AKSEPTOR KB AKTIF</small><strong>1.113</strong></div></div>
-            <div className="kbProgress"><span style={{ width: "66.13%" }} /></div>
-            <div className="kbProgressLabels"><span>0 Aseptor</span><strong>66,13% Pasangan Terdaftar</strong><span>Target 100%</span></div>
-            <div className="kbMethod"><strong>Metode Pelayanan Kontrasepsi:</strong><p>Pelayanan suntik, pil KB, IUD, implan, dan MOW difasilitasi melalui kemitraan bidan desa, PKD, serta rujukan Puskesmas Jaten I secara teratur tiap pekan.</p></div>
-            <small className="kbSource">Sumber: Data KB BKKBN & Register Kader Desa Ngringo 2024</small>
+            <header><div><h3>Posyandu & Keluarga Berencana</h3><p>Layanan kesehatan berbasis masyarakat dan data program KB tahun 2024.</p></div><span className="healthTag goldTag">1.947 Akseptor KB</span></header>
+            <div className="posyanduGrid">
+              <div><small>POSYANDU BALITA</small><strong>28 Posyandu</strong></div>
+              <div><small>POSYANDU LANSIA</small><strong>18 Posyandu</strong></div>
+              <div><small>POSYANDU REMAJA</small><strong>3 Posyandu</strong></div>
+              <div><small>POSBINDU PTM</small><strong>3 Posbindu</strong></div>
+            </div>
+            <div className="staffSummary"><strong>Tenaga kader:</strong><span>272 kader Posyandu</span><span>15 kader Posbindu PTM</span></div>
+            <div className="kbOverview"><div><small>PASANGAN USIA SUBUR (PUS)</small><strong>3.669</strong></div><div><small>AKSEPTOR KB</small><strong>1.947</strong></div></div>
+            <small className="kbSource">Sumber: Data kesehatan dan KB Desa Ngringo 2024</small>
+          </article>
+          <article className="kbCard">
+            <header><div><h3>Kondisi Sosial</h3><p>Data penyandang disabilitas yang tercatat di Ngringo pada tahun 2024.</p></div></header>
+            <div className="posyanduGrid">
+              <div><small>TUNA RUNGU</small><strong>13 Orang</strong></div>
+              <div><small>TUNA GRAHITA</small><strong>8 Orang</strong></div>
+              <div><small>TUNA DAKSA</small><strong>1 Orang</strong></div>
+              <div><small>TUNA LARAS</small><strong>1 Orang</strong></div>
+            </div>
+            <p>Jumlah tuna netra dan cacat ganda tidak tercatat pada tabel sumber.</p>
+            <small className="kbSource">Sumber: Data sosial Desa Ngringo 2024</small>
           </article>
         </div>
       </div>

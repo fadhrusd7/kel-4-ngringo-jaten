@@ -862,6 +862,16 @@ footer em { color: #d6d3d1; font-size: 12px; font-style: normal; font-weight: 40
 .figmaProfile .historyHero > img { object-position: center 58%; }
 .figmaProfile .historyShade { background: linear-gradient(180deg, rgba(72, 6, 8, .08), rgba(72, 6, 8, .88)); }
 .figmaProfile .historyCard p { background: rgba(75, 8, 8, .68); border: 1px solid #fff3; }
+/* Wider history panel, justified copy, and a background that grows with its text. */
+.figmaProfile .historyHero { display: grid; height: auto; min-height: 480px; overflow: hidden; padding: clamp(48px, 7vw, 80px) clamp(20px, 4vw, 48px); place-items: center; }
+.figmaProfile .historyCard { inset: auto; margin: 0 auto; max-width: 1280px; padding: 0; position: relative; width: 100%; }
+.figmaProfile .historyCard h1 { font-size: clamp(32px, 5vw, 58px); left: auto; line-height: 1.2; margin: 0 auto 24px; position: static; text-align: center; transform: none; width: 100%; }
+.figmaProfile .historyCard p { background: rgba(77, 2, 2, .72); border-radius: 20px; font-size: clamp(16px, 1.6vw, 22px); height: auto; left: auto; line-height: 1.75; margin: 0 auto; max-height: none; max-width: none; overflow: visible; padding: clamp(20px, 4vw, 40px); position: static; text-align: justify; transform: none; width: 100%; }
+@media (max-width: 800px) {
+  .figmaProfile .historyHero { min-height: 0; padding: 40px 16px; }
+  .figmaProfile .historyCard h1 { font-size: clamp(28px, 8vw, 38px); margin-bottom: 18px; }
+  .figmaProfile .historyCard p { font-size: 14px; line-height: 1.65; padding: 20px; }
+}
 .figmaProfile footer { padding: 56px max(64px, calc((100vw - 1152px) / 2)) 24px; }
 .figmaProfile .footerTop,
 .figmaProfile .footerBottom { max-width: none; padding-left: 0; padding-right: 0; }
