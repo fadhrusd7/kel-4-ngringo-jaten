@@ -5,22 +5,22 @@ import { SiteFooter, SiteHeader } from "../../components/site-chrome";
 export const metadata: Metadata = { title: "Profil Desa Ngringo" };
 
 const missions = [
-  "Menyelenggarakan pemerintahan desa yang bersih, tertib dan bebas KKN.",
-  "Pemerataan pembangunan infrastruktur demi menunjang ekonomi masyarakat.",
-  "Peningkatan Pendapatan Asli Desa (PAD) Ngringo melalui pengembangan BUMDES.",
-  "Menciptakan inovasi Desa Ngringo guna meningkatkan kreativitas untuk menunjang perekonomian.",
-  "Penyelamatan aset-aset desa untuk kemakmuran masyarakat Desa Ngringo.",
-  "Menyelenggarakan kegiatan agama, sosial, budaya dan olahraga dalam rangka memperkokoh persatuan bangsa.",
+  "Meningkatkan Penyelenggaraan Pemerintah Desa Yang Efektif, Efisien dan Transparan.",
+  "Meningkatkan Pembangunan Fisik Secara Merata dan Berkeadilan.",
+  "Meningkatkan Pemberdayaan Potensi Desa dan UMKM Serta BUMDesa.",
+  "Meningkatkan Pembinaan Kelembagaan Kemasyarakatan Desa.",
+  "Meningkatkan Kualitas Pembangunan Sosial Budaya, Seni dan Ekonomi Masyarakat.",
+  "Meningkatkan Partisipasi Masyarakat Dalam Penyelenggaraan Pemerintah Desa, Pemberdayaan, Pembinaan dan Pembangunan Desa.",
 ];
 
 const demographics = [
-  ["01", "Jumlah Dusun", "6", "Dusun", "1. Kasak\n2. Pulosari\n3. Tundungan\n4. Kanten\n5. Ngledok\n6. Ngringo"],
-  ["02", "Rukun Warga (RW)", "10", "RW", "Tersebar aktif di seluruh dusun"],
-  ["03", "Rukun Tetangga (RT)", "58", "RT", "Unit koordinasi warga paling hulu"],
-  ["04", "Jumlah Penduduk Total", "10.470", "Jiwa", "Data mutasi terintegrasi semester II 2024"],
-  ["05", "Penduduk Laki-laki", "5.188", "Jiwa", "49,55% dari total populasi desa"],
-  ["06", "Penduduk Perempuan", "5.282", "Jiwa", "50,45% (+94 jiwa di atas jumlah laki-laki)"],
-  ["07", "Kepadatan Penduduk", "2.277", "jiwa/km\u00B2", "Persebaran hunian asri & fasilitas umum"],
+  ["01", "Jumlah Dusun", "8", "Dusun", "1. Jurug\n2. Karangrejo\n3. Palur\n4. Plosokerep\n5. Benowo\n6. Gunungwijil\n7. Banaran\n8. Silamat"],
+  ["02", "Rukun Warga (RW)", "29", "RW", "Tersebar aktif di seluruh dusun"],
+  ["03", "Rukun Tetangga (RT)", "178", "RT", "Unit koordinasi warga paling hulu"],
+  ["04", "Jumlah Penduduk Total", "24.407", "Jiwa", "Data mutasi terintegrasi semester II 2024"],
+  ["05", "Penduduk Laki-laki", "12.026 ", "Jiwa", "49,55% dari total populasi desa"],
+  ["06", "Penduduk Perempuan", "12.381", "Jiwa", "50,45% (+355 jiwa di atas jumlah laki-laki)"],
+  ["07", "Kepadatan Penduduk", "5.807", "jiwa/km\u00B2", "Persebaran hunian asri & fasilitas umum"],
 ];
 
 const staff = [
@@ -41,13 +41,13 @@ export default function ProfilPage() {
 
     <section className="historyHero"><Image src="/figma/profile-history.png" alt="Pemandangan Desa Ngringo" fill priority sizes="100vw" /><div className="historyShade" /><div className="historyCard"><h1>Sejarah Desa Ngringo</h1><p>Desa Ngringo berawal dari perjalanan R.A. Ayu Aminah Lembah Manah, istri Sunan Giri dari Gresik, yang hendak mengunjungi putranya, Syekh Wasi Bagna Timur atau Kyai Ageng Gribig, di Jatinom, Klaten. Dalam perjalanan, beliau bersama para pengawal beristirahat dan mandi di Sendang Ngringo yang berada di kawasan hutan. Setelah beristirahat, R.A. Ayu Aminah Lembah Manah jatuh sakit dan wafat di tempat tersebut. Atas keputusan para pengawal, beliau kemudian dimakamkan di kawasan Wana Ngringo, dan peristiwa tersebut dilaporkan kepada pihak keluarga di Gresik. Seiring berjalannya waktu, makam beliau dikenal sebagai makam tokoh yang dihormati. Pada masa Sultan Agung Mataram, kawasan Wana Ngringo mulai dibuka dan dijadikan permukiman. Penduduk yang semakin bertambah kemudian membentuk Dusun Ngringo, yang berkembang menjadi Desa Ngringo hingga saat ini.</p></div></section>
 
-    <section className="vmSection"><header className="profileSectionHeading"><h2>Visi</h2></header><div className="winePanel quote">&ldquo;Terwujudnya Masyarakat Desa Ngringo yang Beragama dan Berbudaya Menuju Keadilan dan Kesejahteraan Berlandaskan Semangat Gotong Royong.&rdquo;</div><header className="profileSectionHeading"><h2>Misi</h2></header><div className="winePanel missionPanel"><ol>{missions.map((mission) => <li key={mission}>{mission}</li>)}</ol></div></section>
+    <section className="vmSection"><header className="profileSectionHeading"><h2>Visi</h2></header><div className="winePanel quote">&ldquo;Terwujudnya Desa Ngringo yang Cerdas, Maju, Bermatabat, dan Sejahtera.&rdquo;</div><header className="profileSectionHeading"><h2>Misi</h2></header><div className="winePanel missionPanel"><ol>{missions.map((mission) => <li key={mission}>{mission}</li>)}</ol></div></section>
 
     <section className="profileBlock"><header className="profileSectionHeading"><h2 className="ribbonTitle">Peta Administrasi Desa Ngringo</h2></header><div className="mapFrame"><Image src="/figma/administrative-map.png" alt="Peta administrasi Desa Ngringo" width={1755} height={1240} /></div></section>
 
     <section className="profileBlock orgBlock"><header className="profileSectionHeading"><h2 className="ribbonTitle">Struktur Organisasi</h2></header><div className="orgCanvas" role="region" aria-label="Diagram struktur organisasi Desa Ngringo" tabIndex={0}><Image src="/strutur-organisasi.png" alt="Bagan struktur organisasi Desa Ngringo" width={876} height={626} /><p className="orgScrollHint">Geser diagram ke samping untuk melihat seluruh struktur.</p></div></section>
 
-    <section id="demografi" className="demography"><div className="demographyInner"><header className="profileSectionHeading"><h2>Wilayah & Demografi Kependudukan</h2><p>Ringkasan wilayah administratif dan gambaran penduduk Desa Ngringo.</p></header><h3>Distribusi Berdasarkan Jenis Kelamin</h3><div className="genderCards"><article><p>Penduduk Laki-Laki</p><strong>5.188 <small>Jiwa</small></strong><div><span>Persentase Penduduk</span><b>49,55%</b></div><i><em /></i></article><article><p>Penduduk Perempuan</p><strong>5.282 <small>Jiwa</small></strong><div><span>Persentase Penduduk</span><b>50,45%</b></div><i><em /></i></article></div><h3 className="matrixTitle">Matriks Indikator Kependudukan</h3><div className="tableWrap" role="region" aria-label="Matriks indikator kependudukan, geser ke samping untuk melihat semua kolom" tabIndex={0}><table><thead><tr><th>No</th><th>Indikator Administratif / Demografi</th><th>Nilai Parameter</th><th>Satuan</th><th>Keterangan</th></tr></thead><tbody>{demographics.map((row) => <tr className={row[0] === "04" ? "populationTotal" : undefined} key={row[0]}>{row.map((cell) => <td key={cell}>{cell}</td>)}</tr>)}</tbody></table></div></div></section>
+    <section id="demografi" className="demography"><div className="demographyInner"><header className="profileSectionHeading"><h2>Wilayah & Demografi Kependudukan</h2><p>Ringkasan wilayah administratif dan gambaran penduduk Desa Ngringo.</p></header><h3>Distribusi Berdasarkan Jenis Kelamin</h3><div className="genderCards"><article><p>Penduduk Laki-Laki</p><strong>5.188 <small>Jiwa</small></strong><div><span>Persentase Penduduk</span><b>12.026</b></div><i><em /></i></article><article><p>Penduduk Perempuan</p><strong>12.381 <small>Jiwa</small></strong><div><span>Persentase Penduduk</span><b>50,73%</b></div><i><em /></i></article></div><h3 className="matrixTitle">Matriks Indikator Kependudukan</h3><div className="tableWrap" role="region" aria-label="Matriks indikator kependudukan, geser ke samping untuk melihat semua kolom" tabIndex={0}><table><thead><tr><th>No</th><th>Indikator Administratif / Demografi</th><th>Nilai Parameter</th><th>Satuan</th><th>Keterangan</th></tr></thead><tbody>{demographics.map((row) => <tr className={row[0] === "04" ? "populationTotal" : undefined} key={row[0]}>{row.map((cell) => <td key={cell}>{cell}</td>)}</tr>)}</tbody></table></div></div></section>
 
     <section id="layanan" className="healthSection">
       <div className="healthSectionHeading"><h2>LAYANAN PUBLIK &amp; KESEHATAN</h2><p>Informasi fasilitas dan program kesehatan bagi warga Desa Ngringo.</p></div><div className="healthHeading"><h2>Kesehatan dan Kesejahteraan Masyarakat</h2></div>
